@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="03" author="mahes">
+    <comment>Inserting Person</comment>
+    <insert tableName="person">
+      <column name="id" valueNumeric="1"/>
+      <column name="name" value="mahes"/>
+      <column name="age" valueNumeric="27"/>
+      <column name="city" value="Sivaganga"/>
+    </insert>
+   <insert tableName="person">
+      <column name="id" valueNumeric="2"/>
+      <column name="name" value="Dhana"/>
+      <column name="age" valueNumeric="28"/>
+      <column name="city" value="Salem"/>
+    </insert>
+    <insert tableName="person">
+      <column name="id" valueNumeric="3"/>
+      <column name="name" value="Murugan"/>
+      <column name="age" valueNumeric="27"/>
+      <column name="city" value="Chennai"/>
+    </insert>
+    <insert tableName="person">
+      <column name="id" valueNumeric="4"/>
+      <column name="name" value="Pavithra"/>
+      <column name="age" valueNumeric="20"/>
+      <column name="city" value="Chennai"/>
+    </insert>
+    <insert tableName="person">
+      <column name="id" valueNumeric="5"/>
+      <column name="name" value="Nagaraj"/>
+      <column name="age" valueNumeric="29"/>
+      <column name="city" value="Chennai"/>
+    </insert>
+  </changeSet>
+</databaseChangeLog>
